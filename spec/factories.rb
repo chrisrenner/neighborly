@@ -176,5 +176,11 @@ FactoryGirl.define do
     email 'some@email.com'
     company_name 'Test'
   end
+
+  factory :payout do
+    payment_service 'balanced'
+    project
+    value           100
+  end
 end
 
